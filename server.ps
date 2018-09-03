@@ -1,0 +1,1231 @@
+%!PS-Adobe-3.0
+%%Title: server.py
+%%For: vsh33
+%%Creator: VIM - Vi IMproved 7.4 (2013 Aug 10)
+%%CreationDate: Tue Aug 21 15:56:13 2018
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 59 49 564 800
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate color
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: A4
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/share/vim/vim74/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/share/vim/vim74/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+595 842 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(server.py                                                                     Page 1)59.5 792.4 ms
+F0 sf
+0 0 0.753 r
+(""")59.5 772.4 ms
+(Server program for communication via UDP sockets. Takes three port numbers to )59.5 762.4 ms
+(bind sockets to and receive communication on. Waits for a request packet from )59.5 752.4 ms
+(the client and then rsends a response packet back with appropriate information.)59.5 742.4 ms
+(Author: Vikas Shenoy vsh33)59.5 732.4 ms
+(Date: 16/8/2018)59.5 722.4 ms
+(""")59.5 712.4 ms
+0.753 0 0.753 r
+(import)59.5 702.4 ms
+0 g
+( socket)s
+0.753 0 0.753 r
+(import)59.5 692.4 ms
+0 g
+( select)s
+0.753 0 0.753 r
+(import)59.5 682.4 ms
+0 g
+( sys)s
+0.753 0 0.753 r
+(import)59.5 672.4 ms
+0 g
+( datetime)s
+0.753 0 0.753 r
+(from)59.5 662.4 ms
+0 g
+( sys )s
+0.753 0 0.753 r
+(import)s
+0 g
+( argv)s
+0 0.502 0 r
+(def)59.5 622.4 ms
+0 g
+( )s
+0.502 0.502 0 r
+(isValid)s
+0 g
+(\(packet\):)s
+(    )59.5 612.4 ms
+0 0 0.753 r
+("""Takes a bytearray request packet and checks if it's valid. Returns)s
+(    a boolean true if valid, false if not. Prints the packet contents.""")59.5 602.4 ms
+0 g
+(    )59.5 592.4 ms
+(    valid = )59.5 582.4 ms
+0.502 0.502 0 r
+(True)s
+0 g
+(    magicNumber = packet[)59.5 572.4 ms
+0 0 0.753 r
+(0)s
+0 g
+(] << )s
+0 0 0.753 r
+(8)s
+0 g
+( | packet[)s
+0 0 0.753 r
+(1)s
+0 g
+(])s
+(    packetType = packet[)59.5 562.4 ms
+0 0 0.753 r
+(2)s
+0 g
+(] << )s
+0 0 0.753 r
+(8)s
+0 g
+( | packet[)s
+0 0 0.753 r
+(3)s
+0 g
+(])s
+(    requestType = packet[)59.5 552.4 ms
+0 0 0.753 r
+(4)s
+0 g
+(] << )s
+0 0 0.753 r
+(8)s
+0 g
+( | packet[)s
+0 0 0.753 r
+(5)s
+0 g
+(])s
+(    length = )59.5 542.4 ms
+0.502 0.502 0 r
+(len)s
+0 g
+(\(packet\))s
+(    )59.5 522.4 ms
+0 0.502 0 r
+(if)s
+0 g
+( length != )s
+0 0 0.753 r
+(6)s
+0 g
+(:)s
+(        )59.5 512.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Request packet must be 6 bytes long.")s
+0 g
+(\))s
+(        valid = )59.5 502.4 ms
+0.502 0.502 0 r
+(False)s
+0 g
+(    )59.5 492.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( magicNumber != )s
+0 0 0.753 r
+(0x497E)s
+0 g
+(:    )s
+(        )59.5 482.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Magic number must be 0x497E")s
+0 g
+(\))s
+(        valid = )59.5 472.4 ms
+0.502 0.502 0 r
+(False)s
+0 g
+(    )59.5 462.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( packetType != )s
+0 0 0.753 r
+(0x0001)s
+0 g
+(:)s
+(        )59.5 452.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Packet type must equal 0x0001")s
+0 g
+(\))s
+(        valid = )59.5 442.4 ms
+0.502 0.502 0 r
+(False)s
+0 g
+(    )59.5 432.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( requestType > )s
+0 0 0.753 r
+(2)s
+0 g
+( )s
+0 0.502 0 r
+(or)s
+0 g
+( requestType < )s
+0 0 0.753 r
+(0)s
+0 g
+(:)s
+(        )59.5 422.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Request type must equal 0x0001 or 0x0002")s
+0 g
+(\))s
+(        valid = )59.5 412.4 ms
+0.502 0.502 0 r
+(False)s
+0 g
+(        )59.5 402.4 ms
+(    )59.5 392.4 ms
+0.753 0 0 r
+(# Print packet contents for debugging purposes)s
+0 g
+(    )59.5 382.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Request packet contents: ")s
+0 g
+(\))s
+(    )59.5 372.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Magic number = {}")s
+0 g
+(.format\()s
+0.502 0.502 0 r
+(hex)s
+0 g
+(\(magicNumber\)\)\))s
+(    )59.5 362.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Packet type = {}")s
+0 g
+(.format\(packetType\)\))s
+(    )59.5 352.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Request type = {}")s
+0 g
+(.format\(requestType\)\))s
+(    )59.5 342.4 ms
+0 0.502 0 r
+(return)s
+0 g
+( valid)s
+0 0.502 0 r
+(def)59.5 302.4 ms
+0 g
+( )s
+0.502 0.502 0 r
+(getMonthName)s
+0 g
+(\(monthNum, languageCode\):)s
+(    )59.5 292.4 ms
+0 0 0.753 r
+("""Takes the current month number and language requested by the user.)s
+(    Returns the month's proper noun name.""")59.5 282.4 ms
+0 g
+(    monthNameList = [)59.5 272.4 ms
+0.502 0.502 0 r
+(None)s
+0 g
+(,)s
+(                     [)59.5 262.4 ms
+0.502 0.502 0 r
+(None)s
+0 g
+(, )s
+0 0 0.753 r
+('January')s
+0 g
+(, )s
+0 0 0.753 r
+('February')s
+0 g
+(, )s
+0 0 0.753 r
+('March')s
+0 g
+(, )s
+0 0 0.753 r
+('April')s
+0 g
+(, )s
+0 0 0.753 r
+('May')s
+0 g
+(, )s
+(                      )59.5 252.4 ms
+0 0 0.753 r
+('June')s
+0 g
+(, )s
+0 0 0.753 r
+('July')s
+0 g
+(, )s
+0 0 0.753 r
+('August')s
+0 g
+(, )s
+0 0 0.753 r
+('September')s
+0 g
+(, )s
+0 0 0.753 r
+('October')s
+0 g
+(, )s
+(                      )59.5 242.4 ms
+0 0 0.753 r
+('November')s
+0 g
+(, )s
+0 0 0.753 r
+('December')s
+0 g
+(], )s
+(                     [)59.5 232.4 ms
+0.502 0.502 0 r
+(None)s
+0 g
+(, )s
+0 0 0.753 r
+('Kohit¿tea')s
+0 g
+(, )s
+0 0 0.753 r
+('Hui-tanguru')s
+0 g
+(, )s
+0 0 0.753 r
+('Poutu-te-rangi')s
+0 g
+(,)s
+(                      )59.5 222.4 ms
+0 0 0.753 r
+('Paenga-whawha')s
+0 g
+(, )s
+0 0 0.753 r
+('Haratua')s
+0 g
+(, )s
+0 0 0.753 r
+('Pipiri')s
+0 g
+(, )s
+0 0 0.753 r
+('Hongongoi')s
+0 g
+(,)s
+(                      )59.5 212.4 ms
+0 0 0.753 r
+('Here-tuki-koka')s
+0 g
+(, )s
+0 0 0.753 r
+('Mahuru')s
+0 g
+(, )s
+0 0 0.753 r
+('Whiringa-a-nuku')s
+0 g
+(, )s
+(                      )59.5 202.4 ms
+0 0 0.753 r
+('Whiringa-a-rangi')s
+0 g
+(, )s
+0 0 0.753 r
+('Hakihea')s
+0 g
+(],)s
+(                     [)59.5 192.4 ms
+0.502 0.502 0 r
+(None)s
+0 g
+(, )s
+0 0 0.753 r
+('Januar')s
+0 g
+(, )s
+0 0 0.753 r
+('Februar')s
+0 g
+(, )s
+0 0 0.753 r
+('Marz')s
+0 g
+(, )s
+0 0 0.753 r
+('April')s
+0 g
+(, )s
+0 0 0.753 r
+('Mai')s
+0 g
+(, )s
+0 0 0.753 r
+('Juni')s
+0 g
+(,)s
+(                      )59.5 182.4 ms
+0 0 0.753 r
+('Juli')s
+0 g
+(, )s
+0 0 0.753 r
+('August')s
+0 g
+(, )s
+0 0 0.753 r
+('September')s
+0 g
+(, )s
+0 0 0.753 r
+('Oktober')s
+0 g
+(, )s
+0 0 0.753 r
+('November')s
+0 g
+(, )s
+(                      )59.5 172.4 ms
+0 0 0.753 r
+('Dezember')s
+0 g
+(]])s
+(    )59.5 162.4 ms
+0 0.502 0 r
+(return)s
+0 g
+( monthNameList[languageCode][monthNum])s
+0 0.502 0 r
+(def)59.5 122.4 ms
+0 g
+( )s
+0.502 0.502 0 r
+(constructResponse)s
+0 g
+(\(requestType, languageCode\):)s
+(    )59.5 112.4 ms
+0 0 0.753 r
+("""Takes a request type \(date or time\), and language code. Returns)s
+(    an appropriate response packet to send back to the client.""")59.5 102.4 ms
+0 g
+(    )59.5 92.4 ms
+0.753 0 0 r
+(# Constructs the response packet header )s
+0 g
+(    packet = )59.5 82.4 ms
+0.502 0.502 0 r
+(bytearray)s
+0 g
+(\()s
+0 0 0.753 r
+(13)s
+0 g
+(\))s
+(    dateTime = datetime.datetime.now\(\))59.5 72.4 ms
+(    magicNumber = )59.5 62.4 ms
+0 0 0.753 r
+(0x497E)s
+0 g
+(    packetType = )59.5 52.4 ms
+0 0 0.753 r
+(0x0002)s
+re sp
+%%PageTrailer
+%%Page: 2 2
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(server.py                                                                     Page 2)59.5 792.4 ms
+F0 sf
+(    year = dateTime.year)59.5 772.4 ms
+(    monthNum = dateTime.month)59.5 762.4 ms
+(    day = dateTime.day)59.5 752.4 ms
+(    hour = dateTime.hour)59.5 742.4 ms
+(    minute = dateTime.minute)59.5 732.4 ms
+(    packet[)59.5 712.4 ms
+0 0 0.753 r
+(0)s
+0 g
+(] = \(magicNumber >> )s
+0 0 0.753 r
+(8)s
+0 g
+(\) & )s
+0 0 0.753 r
+(0xff)s
+0 g
+(    packet[)59.5 702.4 ms
+0 0 0.753 r
+(1)s
+0 g
+(] = magicNumber & )s
+0 0 0.753 r
+(0xff)s
+0 g
+(    )s
+(    packet[)59.5 692.4 ms
+0 0 0.753 r
+(2)s
+0 g
+(] = \(packetType >> )s
+0 0 0.753 r
+(8)s
+0 g
+(\) & )s
+0 0 0.753 r
+(0xff)s
+0 g
+(    packet[)59.5 682.4 ms
+0 0 0.753 r
+(3)s
+0 g
+(] = packetType & )s
+0 0 0.753 r
+(0xff)s
+0 g
+(       )s
+(    packet[)59.5 672.4 ms
+0 0 0.753 r
+(4)s
+0 g
+(] = \(languageCode >> )s
+0 0 0.753 r
+(8)s
+0 g
+(\) & )s
+0 0 0.753 r
+(0xff)s
+0 g
+(    packet[)59.5 662.4 ms
+0 0 0.753 r
+(5)s
+0 g
+(] = languageCode & )s
+0 0 0.753 r
+(0xff)s
+0 g
+(    packet[)59.5 652.4 ms
+0 0 0.753 r
+(6)s
+0 g
+(] = \(year >> )s
+0 0 0.753 r
+(8)s
+0 g
+(\) & )s
+0 0 0.753 r
+(0xff)s
+0 g
+(    packet[)59.5 642.4 ms
+0 0 0.753 r
+(7)s
+0 g
+(] = year & )s
+0 0 0.753 r
+(0xff)s
+0 g
+(    packet[)59.5 632.4 ms
+0 0 0.753 r
+(8)s
+0 g
+(] = monthNum)s
+(    packet[)59.5 622.4 ms
+0 0 0.753 r
+(9)s
+0 g
+(] = day)s
+(    packet[)59.5 612.4 ms
+0 0 0.753 r
+(10)s
+0 g
+(] = hour)s
+(    packet[)59.5 602.4 ms
+0 0 0.753 r
+(11)s
+0 g
+(] = minute)s
+(    packet[)59.5 592.4 ms
+0 0 0.753 r
+(12)s
+0 g
+(] = )s
+0 0 0.753 r
+(0)s
+0 g
+(    )59.5 582.4 ms
+(    message = )59.5 572.4 ms
+0 0 0.753 r
+('')s
+0 g
+(    monthName = getMonthName\(monthNum, languageCode\))59.5 562.4 ms
+(    )59.5 552.4 ms
+0.753 0 0 r
+(# date requested)s
+0 g
+(    )59.5 542.4 ms
+0 0.502 0 r
+(if)s
+0 g
+( requestType == )s
+0 0 0.753 r
+(0x0001)s
+0 g
+(:)s
+(        )59.5 532.4 ms
+0 0.502 0 r
+(if)s
+0 g
+( languageCode == )s
+0 0 0.753 r
+(0x0001)s
+0 g
+(:)s
+(            message = )59.5 522.4 ms
+0 0 0.753 r
+("Today's date is {} {}, {}")s
+0 g
+(.format\(monthName, day, year\))s
+(        )59.5 512.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( languageCode == )s
+0 0 0.753 r
+(0x0002)s
+0 g
+(:)s
+(            message = )59.5 502.4 ms
+0 0 0.753 r
+("Ko te ra o tenei ra ko {} {}, {}")s
+0 g
+(.format\(monthName)s
+(                                                                , day, year\))59.5 492.4 ms
+(        )59.5 482.4 ms
+0 0.502 0 r
+(else)s
+0 g
+(:)s
+(            message = )59.5 472.4 ms
+0 0 0.753 r
+("Heute ist der {}. {} {}")s
+0 g
+(.format\(day, monthName, year\))s
+(    )59.5 462.4 ms
+0.753 0 0 r
+(# time requested)s
+0 g
+(    )59.5 452.4 ms
+0 0.502 0 r
+(else)s
+0 g
+(:)s
+(        )59.5 442.4 ms
+0 0.502 0 r
+(if)s
+0 g
+( languageCode == )s
+0 0 0.753 r
+(0x0001)s
+0 g
+(:)s
+(            message = )59.5 432.4 ms
+0 0 0.753 r
+("The current time is {0}:{1:02d}")s
+0 g
+(.format\(hour, minute\))s
+(        )59.5 422.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( languageCode == )s
+0 0 0.753 r
+(0x0002)s
+0 g
+(:)s
+(            message = )59.5 412.4 ms
+0 0 0.753 r
+("Ko te wa o tenei wa {0}:{1:02d}")s
+0 g
+(.format\(hour, minute\))s
+(        )59.5 402.4 ms
+0 0.502 0 r
+(else)s
+0 g
+(:)s
+(            message = )59.5 392.4 ms
+0 0 0.753 r
+("Die Uhrzeit ist {0}:{1:02d}")s
+0 g
+(.format\(hour, minute\)   )s
+(            )59.5 382.4 ms
+(    )59.5 372.4 ms
+0.753 0 0 r
+(# Add the message and return the packet)s
+0 g
+(    messageBytes = message.encode\()59.5 362.4 ms
+0 0 0.753 r
+('utf-8')s
+0 g
+(\)  )s
+(    packet[)59.5 352.4 ms
+0 0 0.753 r
+(12)s
+0 g
+(] = )s
+0.502 0.502 0 r
+(len)s
+0 g
+(\(messageBytes\))s
+(    )59.5 342.4 ms
+0 0.502 0 r
+(for)s
+0 g
+( byte )s
+0 0.502 0 r
+(in)s
+0 g
+( messageBytes:)s
+(        packet.append\(byte\))59.5 332.4 ms
+(    )59.5 322.4 ms
+0 0.502 0 r
+(return)s
+0 g
+( packet )s
+0 0.502 0 r
+(def)59.5 282.4 ms
+0 g
+( )s
+0.502 0.502 0 r
+(serverLoop)s
+0 g
+(\(s1, s2, s3, p1, p2, p3\):)s
+(    )59.5 272.4 ms
+0 0 0.753 r
+("""Takes three sockets and three port numbers. Waits for a request packet)s
+(    from the client. If valid, returns a response packet with the correct )59.5 262.4 ms
+(    info.""")59.5 252.4 ms
+0 g
+(    bufferSize = )59.5 242.4 ms
+0 0 0.753 r
+(1024)s
+0 g
+(    )59.5 232.4 ms
+0 0.502 0 r
+(while)s
+0 g
+( )s
+0.502 0.502 0 r
+(True)s
+0 g
+(:)s
+(        )59.5 222.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Server waiting for request packets...")s
+0 g
+(\))s
+(        readList, writeList, error = select.select\([s1, s2, s3], [], [], )59.5 212.4 ms
+0.502 0.502 0 r
+(None)s
+0 g
+(\))s
+(        )59.5 202.4 ms
+0 0.502 0 r
+(if)s
+0 g
+( )s
+0.502 0.502 0 r
+(len)s
+0 g
+(\(readList\) > )s
+0 0 0.753 r
+(0)s
+0 g
+(:)s
+(            clientSkt = readList[)59.5 192.4 ms
+0 0 0.753 r
+(0)s
+0 g
+(])s
+(            requestPkt, addr = clientSkt.recvfrom\(bufferSize\))59.5 182.4 ms
+(            packetValid = isValid\(requestPkt\))59.5 172.4 ms
+(            clientPort = clientSkt.getsockname\(\)[)59.5 162.4 ms
+0 0 0.753 r
+(1)s
+0 g
+(])s
+(            )59.5 152.4 ms
+(            )59.5 142.4 ms
+0.753 0 0 r
+(# Construct and send the response packet)s
+0 g
+(            )59.5 132.4 ms
+0 0.502 0 r
+(if)s
+0 g
+( packetValid:)s
+(                requestType = requestPkt[)59.5 122.4 ms
+0 0 0.753 r
+(4)s
+0 g
+(] << )s
+0 0 0.753 r
+(8)s
+0 g
+( | requestPkt[)s
+0 0 0.753 r
+(5)s
+0 g
+(])s
+(                languageCode = )59.5 112.4 ms
+0 0 0.753 r
+(0x0001)s
+0 g
+(                )59.5 102.4 ms
+0 0.502 0 r
+(if)s
+0 g
+( clientPort == p1:)s
+(                    languageCode = )59.5 92.4 ms
+0 0 0.753 r
+(0x0001)s
+0 g
+(                )59.5 82.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( clientPort == p2:)s
+(                    languageCode = )59.5 72.4 ms
+0 0 0.753 r
+(0x0002)s
+0 g
+(                )59.5 62.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( clientPort == p3:)s
+(                    languageCode = )59.5 52.4 ms
+0 0 0.753 r
+(0x0003)s
+re sp
+%%PageTrailer
+%%Page: 3 3
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(server.py                                                                     Page 3)59.5 792.4 ms
+F0 sf
+(                responsePkt = constructResponse\(requestType, languageCode\)         )59.5 772.4 ms
+(                clientSkt.sendto\(responsePkt, addr\))59.5 762.4 ms
+(                )59.5 752.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Reponse packet sent")s
+0 g
+(\))s
+(            )59.5 742.4 ms
+0 0.502 0 r
+(else)s
+0 g
+(:)s
+(                )59.5 732.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Packet is invalid and has been discarded")s
+0 g
+(\)    )s
+0 0.502 0 r
+(def)59.5 692.4 ms
+0 g
+( )s
+0.502 0.502 0 r
+(runServer)s
+0 g
+(\(port1, port2, port3\):)s
+(    )59.5 682.4 ms
+0 0 0.753 r
+("""Takes three port numbers which are checked for correctness. Creates)s
+(    sockets which are bound to these ports, then starts the server loop.""")59.5 672.4 ms
+0 g
+(    )59.5 662.4 ms
+0.753 0 0 r
+(# Port numbers checked for correcteness)s
+0 g
+(    )59.5 652.4 ms
+0 0.502 0 r
+(if)s
+0 g
+( \(port1 == port2 )s
+0 0.502 0 r
+(or)s
+0 g
+( port1 == port3 )s
+0 0.502 0 r
+(or)s
+0 g
+( port2 == port3\):)s
+(        )59.5 642.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Port numbers must be unique.")s
+0 g
+(\) )s
+(        )59.5 632.4 ms
+0 0.502 0 r
+(return)s
+0 g
+( )s
+(    )59.5 622.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( \(port1 < )s
+0 0 0.753 r
+(1024)s
+0 g
+( )s
+0 0.502 0 r
+(or)s
+0 g
+( port2 < )s
+0 0 0.753 r
+(1024)s
+0 g
+( )s
+0 0.502 0 r
+(or)s
+0 g
+( port3 < )s
+0 0 0.753 r
+(1024)s
+0 g
+(\):)s
+(        )59.5 612.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Port numbers must be between 1024 and 64000")s
+0 g
+(\))s
+(        )59.5 602.4 ms
+0 0.502 0 r
+(return)s
+0 g
+(    )59.5 592.4 ms
+0 0.502 0 r
+(elif)s
+0 g
+( \(port1 > )s
+0 0 0.753 r
+(64000)s
+0 g
+( )s
+0 0.502 0 r
+(or)s
+0 g
+( port2 > )s
+0 0 0.753 r
+(64000)s
+0 g
+( )s
+0 0.502 0 r
+(or)s
+0 g
+( port3 > )s
+0 0 0.753 r
+(64000)s
+0 g
+(\):)s
+(        )59.5 582.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Port number must be between 1024 and 64000.")s
+0 g
+(\))s
+(        )59.5 572.4 ms
+0 0.502 0 r
+(return)s
+0 g
+(    )59.5 562.4 ms
+(    )59.5 552.4 ms
+0.753 0 0 r
+(# Create sockets and bind to the given ports)s
+0 g
+(    skt1 = socket.socket\(socket.AF_INET, socket.SOCK_DGRAM\))59.5 542.4 ms
+(    skt2 = socket.socket\(socket.AF_INET, socket.SOCK_DGRAM\))59.5 532.4 ms
+(    skt3 = socket.socket\(socket.AF_INET, socket.SOCK_DGRAM\))59.5 522.4 ms
+(    )59.5 502.4 ms
+0 0.502 0 r
+(try)s
+0 g
+(:)s
+(        skt1.bind\(\()59.5 492.4 ms
+0 0 0.753 r
+('')s
+0 g
+(, port1\)\))s
+(        skt2.bind\(\()59.5 482.4 ms
+0 0 0.753 r
+('')s
+0 g
+(, port2\)\))s
+(        skt3.bind\(\()59.5 472.4 ms
+0 0 0.753 r
+('')s
+0 g
+(, port3\)\))s
+(    )59.5 462.4 ms
+0 0.502 0 r
+(except)s
+0 g
+(:)s
+(        )59.5 452.4 ms
+0.502 0.502 0 r
+(print)s
+0 g
+(\()s
+0 0 0.753 r
+("Failed to bind sockets to given port numbers")s
+0 g
+(\))s
+(        )59.5 442.4 ms
+0 0.502 0 r
+(return)s
+0 g
+(    serverLoop\(skt1, skt2, skt3, port1, port2, port3\)    )59.5 432.4 ms
+(    )59.5 422.4 ms
+0 0.502 0 r
+(def)59.5 392.4 ms
+0 g
+( )s
+0.502 0.502 0 r
+(main)s
+0 g
+(\(\):)s
+(    name, port1, port2, port3 = argv    )59.5 382.4 ms
+(    runServer\()59.5 372.4 ms
+0.502 0.502 0 r
+(int)s
+0 g
+(\(port1\), )s
+0.502 0.502 0 r
+(int)s
+0 g
+(\(port2\), )s
+0.502 0.502 0 r
+(int)s
+0 g
+(\(port3\)\))s
+(main\(\))59.5 362.4 ms
+(        )59.5 342.4 ms
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 3
+%%EOF
+
